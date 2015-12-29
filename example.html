@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<body class="container">
+    <div class="row">
+        <div class="col-md-6 part-1">
+            <div class="dropbox" id="dropbox">
+                drop into here
+                <img src="" id="sourceImg"/>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="image-compress.js"></script>
+<script>
+    var dropbox;
+    function dragenter(e) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+
+    function dragover(e) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+    function drop(e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        var dt = e.dataTransfer;
+        var file = dt.files[0];
+
+        handleFiles(file);
+    }
+    function handleFiles(source_file_obj){
+        var reader=new FileReader();
+        reader.onload=function(e){
+            document.getElementById("sourceImg").src= e.target.result;
+        };
+        reader.readAsDataURL(source_file_obj);
+    }
+    dropbox = document.getElementById("dropbox");
+    dropbox.addEventListener("dragenter", dragenter, false);
+    dropbox.addEventListener("dragover", dragover, false);
+    dropbox.addEventListener("drop", drop, false);
+</script>
+</html>
