@@ -2,7 +2,6 @@
  * Created by clf on 2015/12/29.
  */
 
-(function(window){
     'use strict'
     //polyfill
     if (!HTMLCanvasElement.prototype.toBlob) {
@@ -60,7 +59,7 @@
         cvs.width = source_img_obj.naturalWidth;
         cvs.height = source_img_obj.naturalHeight;
         var ctx = cvs.getContext("2d").drawImage(source_img_obj, 0, 0);
-        var newImageData = cvs.toDataURL(mimeType, quality);
+        var newImageData = cvs.toDataURL(mimeType, 0.1);
         var result_image_obj = new Image();
         result_image_obj.src = newImageData;
         return result_image_obj;
@@ -124,5 +123,3 @@
         file_download.textContent='Download this file';
         return file_download;
     }
-
-}(window));

@@ -10,15 +10,27 @@
     <div class="row">
         <div class="col-md-6 part-1">
             <div class="dropbox" id="dropbox">
-                drop into here
+                <p>drop into here</p>
                 <img src="" id="sourceImg"/>
+                <input type="file" accept="image/*" id="fileInput" style="display:none"/>
             </div>
+            <p class="file-size">File size:<span id="sourceFileSize"></span></p>
+            <div class="form-inline">
+                <input type="text" class="form-control" id="maxSize" placeholder="max size">
+                <button class="btn btn-primary" id="transfer">Transfer</button>
+            </div>
+        </div>
+        <div class="col-md-6 part-2" id="part2">
+            <div class="dropbox">
+                <img src="" id="targetImg"/>
+            </div>
+            <p class="file-size">File size:<span id="targetFileSize"></span></p>
+            <!--<button class="btn btn-primary" id="download">Download</button>-->
         </div>
     </div>
 </body>
 <script src="image-compress.js"></script>
 <script>
-    var dropbox;
     function dragenter(e) {
         e.stopPropagation();
         e.preventDefault();
@@ -38,15 +50,54 @@
         handleFiles(file);
     }
     function handleFiles(source_file_obj){
+        document.getElementById('sourceFileSize').textContent=source_file_obj.size;
         var reader=new FileReader();
         reader.onload=function(e){
             document.getElementById("sourceImg").src= e.target.result;
         };
         reader.readAsDataURL(source_file_obj);
     }
-    dropbox = document.getElementById("dropbox");
+    function dropClick(e){
+        document.getElementById('fileInput').click();
+    }
+
+    function fpChange(e){
+        var file= e.target.files[0];
+        handleFiles(file);
+    }
+
+    function transferImg(e){
+        var quality=document.getElementById('maxSize').value;
+        if(Number(quality)>0&&Number(quality)<1){
+            var resultImg=imgCompress(document.getElementById('sourceImg'));
+            console.log(resultImg);
+            document.getElementById('targetImg').src=resultImg.src;
+            imgToBlob(document.getElementById('sourceImg'),quality,'image/jpeg',function(blob){
+                document.getElementById('targetFileSize').textContent=blob.size;
+                var file_download=createDownload(blob);
+                file_download.style.display="hidden";
+                file_download.id='downloadLink';
+                document.getElementById('part2').appendChild(file_download);
+
+            });
+        }
+        else{
+            alert('quality must between 0 and 1');
+        }
+
+
+    }
+
+    var dropbox = document.getElementById("dropbox");
+    var fileInput = document.getElementById('fileInput');
+    var transferBtn=document.getElementById('transfer');
+    var downloadBtn=document.getElementById('download');
     dropbox.addEventListener("dragenter", dragenter, false);
     dropbox.addEventListener("dragover", dragover, false);
     dropbox.addEventListener("drop", drop, false);
+    dropbox.addEventListener("click", dropClick, false);
+    fileInput.addEventListener('change',fpChange,false);
+    transferBtn.addEventListener('click',transferImg,false);
+    downloadBtn.addEventListener('click',downloadImg,false)
 </script>
 </html>
