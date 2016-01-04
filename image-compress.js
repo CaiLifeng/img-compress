@@ -21,36 +21,30 @@ if (!HTMLCanvasElement.prototype.toBlob) {
         }
     });
 }
-function imgCompressToBlob(source_img_obj,quality,callback){
-    var cvs=document.createElement('canvas');
-    cvs.width = source_img_obj.naturalWidth;
-    cvs.height = source_img_obj.naturalHeight;
-    var ctx=cvs.getContext('2d').drawImage(source_img_obj,0,0);
-    cvs.toBlob(function(blob){
-        callback(blob);
-    },'image/jpeg',quality);
-}
+//function imgCompressToBlob(source_img_obj,quality,callback){
+//    var cvs=document.createElement('canvas');
+//    cvs.width = source_img_obj.naturalWidth;
+//    cvs.height = source_img_obj.naturalHeight;
+//    var ctx=cvs.getContext('2d').drawImage(source_img_obj,0,0);
+//    cvs.toBlob(function(blob){
+//        callback(blob);
+//    },'image/jpeg',quality);
+//}
+//
+//
+//function imgCompressToImg(source_img_obj,quality){
+//    var cvs = document.createElement('canvas');
+//    cvs.width = source_img_obj.naturalWidth;
+//    cvs.height = source_img_obj.naturalHeight;
+//    var ctx = cvs.getContext("2d").drawImage(source_img_obj, 0, 0);
+//    var newImageData = cvs.toDataURL('image/jpeg', quality);
+//    var result_image_obj = new Image();
+//    result_image_obj.src = newImageData;
+//    return result_image_obj;
+//}
+//
 
-
-function imgCompressToImg(source_img_obj,quality){
-    var cvs = document.createElement('canvas');
-    cvs.width = source_img_obj.naturalWidth;
-    cvs.height = source_img_obj.naturalHeight;
-    var ctx = cvs.getContext("2d").drawImage(source_img_obj, 0, 0);
-    var newImageData = cvs.toDataURL('image/jpeg', quality);
-    var result_image_obj = new Image();
-    result_image_obj.src = newImageData;
-    return result_image_obj;
-}
-
-
-
-function fileCompressToImg(source_file_obj,max_size,callback){
-    var quality=1;
-    if(source_file_obj.size>max_size){
-        quality=(max_size/source_file_obj.size).toFixed(1);
-    }
-
+function fileCompressToImg(source_file_obj,quality,callback){
     var reader=new FileReader();
     reader.onload=function(e){
         var imgObj=new Image();
@@ -70,12 +64,7 @@ function fileCompressToImg(source_file_obj,max_size,callback){
     reader.readAsDataURL(source_file_obj);
 }
 
-function fileCompressToBlob(source_file_obj,max_size,callback){
-    var quality=1;
-    if(source_file_obj.size>max_size){
-        quality=(max_size/source_file_obj.size).toFixed(1);
-    }
-
+function fileCompressToBlob(source_file_obj,quality,callback){
     var reader=new FileReader();
     reader.onload=function(e){
         var imgObj=new Image();
@@ -95,10 +84,60 @@ function fileCompressToBlob(source_file_obj,max_size,callback){
 };
 
 
+//params quality is always 1
+function fileCompressToBlobWithSize(source_file_obj,quality,max_size,callback){
+    var reader=new FileReader();
+
+    if(source_file_obj.size<max_size||quality<0.1){
+        reader.onload=function(e){
+            var imgObj=new Image();
+            imgObj.src=e.target.result;
+            imgObj.onload=function(){
+                var cvs=document.createElement('canvas');
+                cvs.width = imgObj.naturalWidth;
+                cvs.height = imgObj.naturalHeight;
+                var ctx=cvs.getContext('2d').drawImage(imgObj,0,0);
+                cvs.toBlob(function(blob){
+                    console.log('quality is:'+quality);
+                    console.log('blob size is'+blob.size);
+                    callback(blob);
+                },'image/jpeg',quality);
+            };
+        };
+    }
+    else{
+        quality=(quality-0.1).toFixed(2);
+        reader.onload=function(e){
+            var imgObj=new Image();
+            imgObj.src=e.target.result;
+            imgObj.onload=function(){
+                var cvs=document.createElement('canvas');
+                cvs.width = imgObj.naturalWidth;
+                cvs.height = imgObj.naturalHeight;
+                var ctx=cvs.getContext('2d').drawImage(imgObj,0,0);
+                cvs.toBlob(function(blob){
+                    console.log('quality is:'+quality);
+                    console.log('blob size is'+blob.size);
+                    if(blob.size<max_size){
+                        callback(blob);
+                    }
+                    else{
+                        fileCompressToBlob(source_file_obj,quality,max_size,callback)
+                    }
+                },'image/jpeg',quality);
+            };
+        };
+
+    }
+    reader.readAsDataURL(source_file_obj);
+}
+
+
 window.imgComp={
-    imgCompressToBlob:imgCompressToBlob,
-    imgCompressToImg:imgCompressToImg,
+    //imgCompressToBlob:imgCompressToBlob,
+    //imgCompressToImg:imgCompressToImg,
     fileCompressToImg:fileCompressToImg,
-    fileCompressToBlob:fileCompressToBlob
+    fileCompressToBlob:fileCompressToBlob,
+    fileCompressToBlobWithSize:fileCompressToBlobWithSize
 };
 })(window);

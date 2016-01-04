@@ -1,0 +1,27 @@
+{
+  "name": "img-compress",
+  "version": "1.0.0",
+  "description": "Compress image using File API,canvas and blob",
+  "main": "image-compress.js",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaiLifeng/img-compress.git"
+  },
+  "keywords": [
+    "image",
+    "compress"
+  ],
+  "author": "clf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaiLifeng/img-compress/issues"
+  },
+  "homepage": "https://github.com/CaiLifeng/img-compress#readme"
+}

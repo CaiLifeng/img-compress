@@ -7,33 +7,31 @@
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 <body class="container">
-    <div class="row">
-        <div class="col-md-6 part-1">
-            <div class="dropbox" id="dropbox">
-                <p>drop into here</p>
-                <img src="" id="sourceImg"/>
-                <input type="file" accept="image/*" id="fileInput" style="display:none"/>
-            </div>
-            <p class="file-size">File size:<span id="sourceFileSize"></span></p>
-            <div class="form-inline">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="maxSize" placeholder="max size">
-                    <div class="input-group-addon">B</div>
-                </div>
-                <button class="btn btn-primary" id="transfer">Transfer</button>
-            </div>
+<div class="row">
+    <div class="col-md-6 part-1">
+        <div class="dropbox" id="dropbox">
+            <p>drop into here</p>
+            <img src="" id="sourceImg"/>
+            <input type="file" accept="image/*" id="fileInput" style="display:none"/>
         </div>
-        <div class="col-md-6 part-2" id="part2">
-            <div class="dropbox">
-                <img src="" id="targetImg"/>
-            </div>
-            <p class="file-size">File size:<span id="targetFileSize"></span></p>
-            <a id="downloadLink"></a>
+        <p class="file-size">File size:<span id="sourceFileSize"></span></p>
+        <div class="form-inline">
+            <input type="text" class="form-control" id="quality" placeholder="between 0 and 1">
+            <button class="btn btn-primary" id="transfer">Transfer</button>
         </div>
     </div>
+    <div class="col-md-6 part-2" id="part2">
+        <div class="dropbox">
+            <img src="" id="targetImg"/>
+        </div>
+        <p class="file-size">File size:<span id="targetFileSize"></span></p>
+        <a id="downloadLink"></a>
+    </div>
+</div>
 </body>
 <script src="image-compress.js"></script>
 <script>
+    window.URL=window.URL||window.webkitURL;
     var file;
     function dragenter(e) {
         e.stopPropagation();
@@ -71,18 +69,22 @@
     }
 
     function transferImg(e){
-        var quality=document.getElementById('maxSize').value;
+        var quality=document.getElementById('quality').value;
+        if(Number(quality)<0||Number(quality)>1){
+            return alert('Quality must between 0 and 1');
+        }
+        imgComp.fileCompressToImg(file,Number(quality),function(resultImg){
+            document.getElementById('targetImg').src=resultImg.src;
+        });
 
-        var resultImg=imgComp.imgCompressToImg(document.getElementById('sourceImg'),Number(quality));
-        document.getElementById('targetImg').src=resultImg.src;
-        imgComp.imgCompressToBlob(document.getElementById('sourceImg'),Number(quality),function(blob){
+        imgComp.fileCompressToBlob(file,Number(quality),function(blob){
+            console.log(blob.size);
             document.getElementById('targetFileSize').textContent=blob.size+'B';
             var downloadLink=document.getElementById('downloadLink');
             downloadLink.href=window.URL.createObjectURL(blob);
             downloadLink.download=blob.type;
             downloadLink.textContent='Download this file';
         });
-
     }
 
     var dropbox = document.getElementById("dropbox");
@@ -94,5 +96,6 @@
     dropbox.addEventListener("click", dropClick, false);
     fileInput.addEventListener('change',fpChange,false);
     transferBtn.addEventListener('click',transferImg,false);
+
 </script>
 </html>

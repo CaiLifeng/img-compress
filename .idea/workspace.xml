@@ -2,10 +2,161 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc57f0be-8afe-49e8-a81e-35b17da12512" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example.html" afterPath="$PROJECT_DIR$/example.html" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\README.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\dist\image-to-blob.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\dist\image-to-blob.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\examples\bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\examples\download.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\examples\hello.svg" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\examples\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\examples\index.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\examples\sloth.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\examples\sloth.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\examples\sloth.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\index.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\node_modules\image-to-data-uri\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\node_modules\image-to-data-uri\image-to-data-uri.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\node_modules\image-to-data-uri\package.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\node_modules\image-to-data-uri\readme.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\package.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\image-to-blob\test\index.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\README.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\demo\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\demo\css\style.old.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\demo\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\demo\index.old.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\jquery.scrollTo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\jquery.scrollTo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\package.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\ElemMaxY-compat.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\ElemMaxY-quirks.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\WinMaxY-compat.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\WinMaxY-quirks.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\WinMaxY-to-iframe-compat.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\WinMaxY-to-iframe-quirks.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\WinMaxY-with-iframe-compat.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\WinMaxY-with-iframe-quirks.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery.scrollto\tests\test.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\AUTHORS.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\README.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\dist\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\dist\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\dist\jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\package.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax\jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax\load.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax\parseJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax\parseXML.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax\script.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax\var\nonce.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax\var\rquery.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\ajax\xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\attributes\attr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\attributes\classes.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\attributes\prop.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\attributes\support.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\attributes\val.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\core.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\core\access.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\core\init.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\core\parseHTML.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\core\ready.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\core\var\rsingleTag.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\addGetHookIf.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\curCSS.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\defaultDisplay.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\hiddenVisibleSelectors.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\support.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\swap.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\var\cssExpand.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\var\getStyles.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\var\isHidden.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\var\rmargin.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\css\var\rnumnonpx.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\data.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\data\Data.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\data\accepts.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\data\var\data_priv.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\data\var\data_user.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\deferred.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\effects.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\effects\Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\effects\animatedSelector.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\event.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\event\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\event\alias.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\event\support.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\exports\amd.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\exports\global.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\intro.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\manipulation.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\manipulation\_evalUrl.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\manipulation\support.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\manipulation\var\rcheckableType.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\offset.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\outro.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\queue.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\queue\delay.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\selector-native.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\selector-sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\selector.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\dist\sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\dist\sizzle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\dist\sizzle.min.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\test\data\empty.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\test\data\mixed_sort.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\test\data\testinit.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\test\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\test\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\test\unit\extending.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\test\unit\selector.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\sizzle\test\unit\utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\traversing.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\traversing\findFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\traversing\var\rneedsContext.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\arr.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\class2type.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\concat.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\hasOwn.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\indexOf.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\pnum.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\push.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\rnotwhite.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\slice.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\strundefined.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\support.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\var\toString.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\img-compress\node_modules\jquery\src\wrap.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image-compress.js" afterPath="$PROJECT_DIR$/image-compress.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\img-compress\example2.html" afterPath="$PROJECT_DIR$/example.html" />
     </list>
     <ignored path="img-compress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +177,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="example2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/example2.html">
+      <file leaf-file-name="example.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52955663">
-              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            <state vertical-scroll-proportion="-5.102041">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -42,30 +193,28 @@
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image-compress.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="image-compress.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image-compress.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.885714">
-              <caret line="100" column="40" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.89041096">
+              <caret line="123" column="25" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example.html">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.551723">
-              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-1.2121212">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,9 +235,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/image-compress.js" />
         <option value="$PROJECT_DIR$/example.html" />
         <option value="$PROJECT_DIR$/example2.html" />
+        <option value="$PROJECT_DIR$/image-compress.js" />
       </list>
     </option>
   </component>
@@ -101,7 +250,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1932" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -127,6 +277,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -145,10 +297,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img-compress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img-compress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,9 +321,10 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.example2.html">
-    <configuration default="false" name="example2.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/img-compress/example2.html">
+  <component name="RunManager" selected="JavaScript Debug.example.html">
+    <configuration default="false" name="example.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/img-compress/example.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -201,15 +366,18 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.example2.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.example.html" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.example2.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.example.html" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fc57f0be-8afe-49e8-a81e-35b17da12512" name="Default" comment="" />
@@ -220,12 +388,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -242,6 +410,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -253,7 +429,7 @@
     <entry file="file://$PROJECT_DIR$/example.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="37" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="37" />
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -286,29 +462,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image-compress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.885714">
-          <caret line="100" column="40" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2121212">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.551723">
-          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+        <state vertical-scroll-proportion="-5.102041">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example2.html">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52955663">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image-compress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.89041096">
+          <caret line="123" column="25" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
