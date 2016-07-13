@@ -84,60 +84,10 @@ function fileCompressToBlob(source_file_obj,quality,callback){
 };
 
 
-//params quality is always 1
-function fileCompressToBlobWithSize(source_file_obj,quality,max_size,callback){
-    var reader=new FileReader();
-
-    if(source_file_obj.size<max_size||quality<0.1){
-        reader.onload=function(e){
-            var imgObj=new Image();
-            imgObj.src=e.target.result;
-            imgObj.onload=function(){
-                var cvs=document.createElement('canvas');
-                cvs.width = imgObj.naturalWidth;
-                cvs.height = imgObj.naturalHeight;
-                var ctx=cvs.getContext('2d').drawImage(imgObj,0,0);
-                cvs.toBlob(function(blob){
-                    console.log('quality is:'+quality);
-                    console.log('blob size is'+blob.size);
-                    callback(blob);
-                },'image/jpeg',quality);
-            };
-        };
-    }
-    else{
-        quality=(quality-0.1).toFixed(2);
-        reader.onload=function(e){
-            var imgObj=new Image();
-            imgObj.src=e.target.result;
-            imgObj.onload=function(){
-                var cvs=document.createElement('canvas');
-                cvs.width = imgObj.naturalWidth;
-                cvs.height = imgObj.naturalHeight;
-                var ctx=cvs.getContext('2d').drawImage(imgObj,0,0);
-                cvs.toBlob(function(blob){
-                    console.log('quality is:'+quality);
-                    console.log('blob size is'+blob.size);
-                    if(blob.size<max_size){
-                        callback(blob);
-                    }
-                    else{
-                        fileCompressToBlob(source_file_obj,quality,max_size,callback)
-                    }
-                },'image/jpeg',quality);
-            };
-        };
-
-    }
-    reader.readAsDataURL(source_file_obj);
-}
-
-
 window.imgComp={
     //imgCompressToBlob:imgCompressToBlob,
     //imgCompressToImg:imgCompressToImg,
     fileCompressToImg:fileCompressToImg,
-    fileCompressToBlob:fileCompressToBlob,
-    fileCompressToBlobWithSize:fileCompressToBlobWithSize
+    fileCompressToBlob:fileCompressToBlob
 };
 })(window);
